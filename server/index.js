@@ -4,7 +4,8 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser');  
 const userRoutes = require('./routes/auth');  
 const taskRoutes = require('./routes/tasks');  
-const config = require('./config');  
+const config = require('./config');
+const firebase = require("firebase/app");
 
 app.use(bodyParser.json());  
 app.use(express.static('client')); // Serve static files from client folder  
